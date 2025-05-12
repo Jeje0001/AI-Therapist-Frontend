@@ -2,8 +2,7 @@ import React from 'react';
 
 import '../styles/Hero.css';
 // import heroImg from '';
-import heroImg from "../assets/illustrations/hero-robot.png";
-
+import heroimg from '/Users/jeje/Desktop/JavaProjects/Projects/AI-Therapist-Frontend/src/public/assets/Illustrations/hero-robot.png'
 function Hero(){
     return(
     <section className='hero-section'>
@@ -19,7 +18,8 @@ function Hero(){
                 </div>
             </div>
             <div className="hero-image">
-                <img src={heroImg}alt="MindHaven AI robot" />
+            {/* <img src="/Users/jeje/Desktop/JavaProjects/Projects/AI-Therapist-Frontend/src/public/assets/Illustrations/hero-robot.png" alt="Hero Robot" /> */}
+            <img src={heroimg} alt="" />
             </div>
 
 
