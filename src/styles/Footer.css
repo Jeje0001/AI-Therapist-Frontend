@@ -1,0 +1,13 @@
+.footer-section{
+    background-color: #23272A;
+    padding: 2rem;
+    color: white;
+    width: 100%;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}

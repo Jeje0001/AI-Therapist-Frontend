@@ -1,12 +1,14 @@
 import React from "react";
 import '../styles/Navbar.css';
+import { scrollToSection } from '../utils/scrollToSection';
+
 
 
 function Navbar(){
     return(
     <>
 
-<nav className="navbar navbar-expand-lg bg-dark fixed-top" role="navigation" aria-label="main navigation">
+<nav className="navbar navbar-expand-lg bg-dark fixed-top " role="navigation" aria-label="main navigation">
 <div className="container-fluid d-flex justify-content-between align-items-center">
 
 
@@ -25,18 +27,16 @@ function Navbar(){
 </button>
 </div>
 
-  <div className="d-none d-lg-flex gap-4 justify-content-center">
+  <div className="d-none d-lg-flex gap-6 justify-content-center">
 
 
   <ul className="nav nav-pills ">
     <li className="nav-item">
-      <a className="nav-link" href="#scrollspyHeading1" data-bs-dismiss="offcanvas">Features</a>
+      <a className="nav-link" onClick={() => scrollToSection('features')} href="#features" data-bs-dismiss="offcanvas">Features</a>
     </li>
+   
     <li className="nav-item">
-      <a className="nav-link" href="#scrollspyHeading2">How It Works</a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" href="#scrollspyHeading2">Faq</a>
+      <a className="nav-link" href="#faq"  onClick={() => scrollToSection('faq')}>Faq</a>
     </li>
    
     
@@ -69,8 +69,7 @@ function Navbar(){
     ></button>
   </div>
   <div className="offcanvas-body d-flex flex-column gap-3">
-    <a href="#scrollspyHeading1" className="nav-link">Features</a>
-    <a href="#scrollspyHeading2" className="nav-link">About</a>
+    <a href="#features" className="nav-link">Features</a>
     <a href="#scrollspyHeading2" className="nav-link">Faq</a>
     <hr className="bg-white" />
     <button className="btn login">Login</button>

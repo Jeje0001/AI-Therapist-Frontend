@@ -1,0 +1,146 @@
+.closing-cta-section {
+    position: relative;
+    background-color: #23272A;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .cta-headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1rem;
+    animation: bounceIn 1s ease-in;
+  }
+  
+  .cta-subtext {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #E0E0E0;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in 0.5s;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn.solid {
+    background: #00DDEB;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+  }
+  
+  .btn.solid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 221, 235, 0.8);
+  }
+  
+  .btn.outline {
+    background: transparent;
+    color: #00DDEB;
+    border: 2px solid #00DDEB;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn.outline:hover {
+    background-color: #00DDEB;
+    color: white;
+  }
+  
+  .cta-bot {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-bot:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 221, 235, 0.5);
+  }
+  
+  .closing-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(rgba(0, 221, 235, 0.08) 1px, transparent 1px);
+    background-size: 25px 25px;
+    animation: floatDots 20s linear infinite;
+    z-index: 0;
+    opacity: 0.3;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes floatDots {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cta-headline {
+      font-size: 2rem;
+    }
+  
+    .cta-subtext {
+      font-size: 1rem;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .cta-bot {
+      position: static;
+      margin-top: 2rem;
+    }
+  }
+  

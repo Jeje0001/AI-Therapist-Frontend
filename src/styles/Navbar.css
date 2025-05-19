@@ -126,7 +126,7 @@ nav{
   }
   .offcanvas-backdrop,
   .offcanvas-backdrop.show {
-    position: fixed !important;
+    /* position: fixed !important; */
     inset: 0 !important;
     z-index: 1040 !important;
     background: linear-gradient(to right, #1A2A44, #0A0F1F) !important;

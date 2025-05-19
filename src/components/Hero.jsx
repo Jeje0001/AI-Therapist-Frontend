@@ -17,7 +17,6 @@ function Hero(){
                 </div>
             </div>
             <div className="hero-image">
-            {/* <img src="/Users/jeje/Desktop/JavaProjects/Projects/AI-Therapist-Frontend/src/public/assets/Illustrations/hero-robot.png" alt="Hero Robot" /> */}
             <img src='/assets/Illustrations/hero-robot.png' alt="Hero robot" />
             </div>
 

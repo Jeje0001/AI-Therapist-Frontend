@@ -1,5 +1,17 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(
+        135deg,
+        #1a2a44 0%,
+        #3b2a6d 50%,
+        #404eed 100%
+      );
   overflow-x: hidden;
 }
+
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;  
+  }
