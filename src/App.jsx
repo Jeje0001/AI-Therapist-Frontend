@@ -1,6 +1,6 @@
 
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route ,Router} from "react-router-dom";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -35,7 +35,7 @@ function Home() {
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
 
       <Routes>
@@ -46,7 +46,7 @@ function App() {
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
