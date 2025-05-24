@@ -1,8 +1,8 @@
-
+/* 
 
 .feature-card {
-    background: linear-gradient(135deg, #2A2A64, #3F3FE2); 
-    border-radius: 2rem;
+  background: linear-gradient(135deg, #1A1A2F 0%, #1B2A3C 100%);
+  border-radius: 2rem;  
     padding: 2rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -77,4 +77,49 @@
 
   .feature-section {
     scroll-margin-top: 100px;
+  } */
+
+  .feature-card {
+    background: linear-gradient(135deg, #1B2A3C 0%, #202A44 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: rgba(255, 255, 255, 0.05); */
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 30px rgba(0, 221, 235, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    max-width: 1100px;
+    gap: 2rem;
   }
+  
+  .feature-card:hover {
+    box-shadow: 0 0 40px rgba(0, 221, 235, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  .feature-card img {
+    max-width: 280px;
+    width: 100%;
+  }
+  
+  .feature-content {
+    flex: 1;
+  }
+  
+  .feature-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .feature-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d0d0d0;
+  }
+  

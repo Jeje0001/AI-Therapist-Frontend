@@ -13,7 +13,7 @@ function Navbar(){
 
 
 
-  <a className="navbar-brand brand" href="#">MindHaven</a>
+  <a className="navbar-brand brand" href="/">MindHaven</a>
   <div className="d-lg-none ms-auto">
 
   <button
@@ -45,8 +45,8 @@ function Navbar(){
   </div>
 
     <div className=" d-none d-lg-flex gap-2">
-  <button className="btn login">Login</button>
-  <button className="btn signup">Sign up</button>
+    <a href="/login"><button className="btn login">Login</button></a>
+    <a href="/signup"><button className="btn signup">Sign up</button></a>
 </div>
     </div>
 
@@ -60,7 +60,7 @@ function Navbar(){
   aria-labelledby="mobileNavLabel"
 >
   <div className="offcanvas-header">
-    <h5 className="offcanvas-title" id="mobileNavLabel">MindHaven</h5>
+    <h5 className="offcanvas-title" id="mobileNavLabel" href="/">MindHaven</h5>
     <button
       type="button"
       className="btn-close btn-close-white"
@@ -69,11 +69,11 @@ function Navbar(){
     ></button>
   </div>
   <div className="offcanvas-body d-flex flex-column gap-3">
-    <a href="#features" className="nav-link">Features</a>
-    <a href="#scrollspyHeading2" className="nav-link">Faq</a>
+    <a href="/" className="nav-link">Features</a>
+    <a href="/" className="nav-link">Faq</a>
     <hr className="bg-white" />
-    <button className="btn login">Login</button>
-    <button className="btn signup">Sign up</button>
+    <a href="/login"><button className="btn login">Login</button></a>
+    <a href="/signup"><button className="btn signup">Sign up</button></a>
   </div>
 </div>
     </>

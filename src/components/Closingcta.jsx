@@ -13,7 +13,6 @@ function ClosingCTA() {
           <a href="#features" className="btn outline">Learn More</a>
         </div>
       </div>
-      <img src='/assets/Illustrations/cta-waving.png' alt="Waving AI" className="cta-bot" />
     </section>
   );
 }

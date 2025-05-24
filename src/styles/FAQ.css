@@ -1,5 +1,4 @@
 .faq-section {
-    /* background-color: #FFFFFF; */
     padding: 4rem 2rem;
     text-align: center;
   }
@@ -8,7 +7,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
-    color: #23272A;
+    color: white;
     animation: bounceIn 1s ease-in;
     margin-bottom: 2rem;
   }

@@ -1,12 +1,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-        135deg,
-        #1a2a44 0%,
-        #3b2a6d 50%,
-        #404eed 100%
-      );
+  /* background: linear-gradient(
+    135deg,
+    #0F172A 0%,
+    #1A1A1F 50%,
+    #1E1E2F 100%
+  ); */
+  background: linear-gradient(135deg, #0F172A 0%, #1A1A1F 50%, #1E1E2F 100%);
+
   overflow-x: hidden;
 }
 
