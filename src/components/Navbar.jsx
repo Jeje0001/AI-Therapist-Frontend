@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/Navbar.css';
 import { scrollToSection } from '../utils/scrollToSection';
 
+import { Link } from 'react-router-dom';
 
 
 function Navbar(){
