@@ -11,8 +11,9 @@ function Hero(){
                 <p>MindHaven is your personal AI therapist, always ready to listen, support, and grow with you. Whether you're feeling anxious, overwhelmed, or just need to talk, we’re here — day or night.</p>
 
                 <div className="hero-buttons">
-                <button className="btn outline">Login</button>
-                <button className="btn solid">Sign up</button>
+              <Link to="/login"><button className="btn login">Login</button></Link>
+             <Link to="/signup"><button className="btn signup">Sign up</button></Link>
+
 
                 </div>
             </div>

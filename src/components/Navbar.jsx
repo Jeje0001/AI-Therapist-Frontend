@@ -13,7 +13,7 @@ function Navbar(){
 
 
 
-  <a className="navbar-brand brand" href="/">MindHaven</a>
+<Link to="/" className="navbar-brand brand">MindHaven</Link>
   <div className="d-lg-none ms-auto">
 
   <button
@@ -36,7 +36,7 @@ function Navbar(){
     </li>
    
     <li className="nav-item">
-      <a className="nav-link" href="#faq"  onClick={() => scrollToSection('faq')}>Faq</a>
+      <a className="nav-link" href="#faq"  onClick={() => scrollToSection('faq')}>FAQ</a>
     </li>
    
     
@@ -45,8 +45,9 @@ function Navbar(){
   </div>
 
     <div className=" d-none d-lg-flex gap-2">
-    <a href="/login"><button className="btn login">Login</button></a>
-    <a href="/signup"><button className="btn signup">Sign up</button></a>
+    <Link to="/login"><button className="btn login">Login</button></Link>
+<Link to="/signup"><button className="btn signup">Sign up</button></Link>
+
 </div>
     </div>
 
@@ -70,10 +71,10 @@ function Navbar(){
   </div>
   <div className="offcanvas-body d-flex flex-column gap-3">
     <a href="/" className="nav-link">Features</a>
-    <a href="/" className="nav-link">Faq</a>
+    <a href="/" className="nav-link">FAQ</a>
     <hr className="bg-white" />
-    <a href="/login"><button className="btn login">Login</button></a>
-    <a href="/signup"><button className="btn signup">Sign up</button></a>
+    <Link to="/login"><button className="btn login">Login</button></Link>
+    <Link to="/signup"><button className="btn signup">Sign up</button></Link>
   </div>
 </div>
     </>
