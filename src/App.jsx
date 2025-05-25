@@ -1,6 +1,6 @@
 
 
-import { BrowserRouter, Routes, Route ,Router} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -21,7 +21,7 @@ import CookiePolicy from './components/CookiePolicy';
 function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Feature1 />
       <Feature2 />
